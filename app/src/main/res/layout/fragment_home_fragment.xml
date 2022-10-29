@@ -18,15 +18,43 @@
     <GridLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:columnCount="3"
+        android:padding="4dp"
+        android:rowCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_home" />
+        app:layout_constraintTop_toBottomOf="@id/iv_home">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/home_nav_menu" />
+        <ImageButton
+            android:id="@+id/ib_shikayat"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_profile" />
+
+        <ImageButton
+            android:id="@+id/ib_kachra"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_profile" />
+
+        <ImageButton
+            android:id="@+id/ib_city"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:src="@drawable/ic_profile" />
+    </GridLayout>
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="75dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:menu="@menu/home_nav_menu" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
