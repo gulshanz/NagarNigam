@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.shikayat.ShikayatFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_shikayat"
+        tools:listitem="@layout/item_shikayat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
 
 </FrameLayout>

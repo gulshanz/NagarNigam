@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.gulshan.nagarnigam.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.gulshan.nagarnigam.ui.home.HomeFragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment2_to_cityFragment"
+            app:destination="@id/cityFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_shikayatPostFragment"
+            app:destination="@id/shikayatPostFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_kachraFragment"
+            app:destination="@id/kachraFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shikayatPostFragment"
+        android:name="com.gulshan.nagarnigam.ui.shikayat.ShikayatPostFragment"
+        android:label="fragment_shikayat_post"
+        tools:layout="@layout/fragment_shikayat_post" >
+        <action
+            android:id="@+id/action_shikayatPostFragment_to_shikayatFragment"
+            app:destination="@id/shikayatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.gulshan.nagarnigam.ui.city.CityFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" />
+    <fragment
+        android:id="@+id/kachraFragment"
+        android:name="com.gulshan.nagarnigam.ui.kachra.KachraFragment"
+        android:label="fragment_kachra"
+        tools:layout="@layout/fragment_kachra" />
+    <fragment
+        android:id="@+id/shikayatFragment"
+        android:name="com.gulshan.nagarnigam.ui.shikayat.ShikayatFragment"
+        android:label="fragment_shikayat"
+        tools:layout="@layout/fragment_shikayat" />
+</navigation>

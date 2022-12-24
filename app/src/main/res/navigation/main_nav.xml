@@ -11,37 +11,12 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_home_fragment"
-            app:destination="@id/home_fragment" />
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
     </fragment>
     <fragment
-        android:id="@+id/cityFragment"
-        android:name="com.gulshan.nagarnigam.ui.city.CityFragment"
-        android:label="fragment_city"
-        tools:layout="@layout/fragment_city" />
-    <fragment
-        android:id="@+id/home_fragment"
-        android:name="com.gulshan.nagarnigam.ui.home.HomeFragment"
-        android:label="fragment_home_fragment"
-        tools:layout="@layout/fragment_home_fragment" >
-        <action
-            android:id="@+id/action_home_fragment_to_cityFragment"
-            app:destination="@id/cityFragment" />
-        <action
-            android:id="@+id/action_home_fragment_to_shikayatFragment"
-            app:destination="@id/shikayatFragment" />
-        <action
-            android:id="@+id/action_home_fragment_to_kachraFragment2"
-            app:destination="@id/kachraFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/shikayatFragment"
-        android:name="com.gulshan.nagarnigam.ui.shikayat.ShikayatFragment"
-        android:label="fragment_shikayat"
-        tools:layout="@layout/fragment_shikayat" />
-    <fragment
-        android:id="@+id/kachraFragment"
-        android:name="com.gulshan.nagarnigam.ui.kachra.KachraFragment"
-        android:label="fragment_kachra"
-        tools:layout="@layout/fragment_kachra" />
+        android:id="@+id/signupFragment"
+        android:name="com.gulshan.nagarnigam.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
 </navigation>

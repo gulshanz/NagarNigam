@@ -7,8 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gulshan.nagarnigam.R
+import com.gulshan.nagarnigam.databinding.FragmentKachraBinding
+import com.gulshan.nagarnigam.databinding.FragmentShikayatBinding
 
 class KachraFragment : Fragment() {
+    lateinit var binding: FragmentKachraBinding
 
     companion object {
         fun newInstance() = KachraFragment()
@@ -19,8 +22,9 @@ class KachraFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_kachra, container, false)
+    ): View {
+        binding = FragmentKachraBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
